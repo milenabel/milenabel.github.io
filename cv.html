@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CV — Milena Belianovich Holtman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="cv">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header" style="border-bottom:1px solid #222;padding-bottom:18px;margin-bottom:22px">
+      <div style="flex:1 1 auto">
+        <h1 style="margin:0 0 4px">Milena Belianovich Holtman</h1>
+        <p class="meta" style="margin:0">Software Engineer · Scientist — Operator Learning, SciML, HPC</p>
+
+        <div class="chips" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="chip">Salt Lake City, UT</span>
+          <a class="chip" href="mailto:milushka.trend@gmail.com">milushka.trend@gmail.com</a>
+          <a class="chip" href="https://github.com/milenabel" target="_blank" rel="noopener">github.com/milenabel</a>
+          <a class="chip" href="https://www.linkedin.com/in/milenabel/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="chip" href="https://scholar.google.com/citations?user=goYJXTsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="chip" href="https://arxiv.org/search/?query=Belianovich&searchtype=all" target="_blank" rel="noopener">arXiv</a>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" style="background:var(--green);border-color:var(--green);color:#fff" href="assets/resume.pdf" target="_blank" rel="noopener">Download Résumé (PDF)</a>
+        <a class="btn" href="index.html">Home</a>
+      </div>
+    </header>
+
+    <div class="grid2">
+      <!-- LEFT COLUMN -->
+      <main>
+
+        <!-- About -->
+        <section class="panel">
+          <h2>About</h2>
+          <p class="meta" style="max-width:70ch">
+            I’m a software engineer and applied scientist focused on Scientific Machine Learning and Operator Learning.
+            I build reliable training/evaluation pipelines, performant numerical routines, and clean developer tooling.
+            I’m currently exploring full-time engineering roles where I can ship useful ML/infra features end-to-end.
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section class="panel">
+          <h2>Education</h2>
+          <h3>University of Utah — Kahlert School of Computing</h3>
+          <p class="meta"><span class="tag">M.S. Scientific Computing (in progress)</span> · Salt Lake City, UT</p>
+
+          <h3>University of Northern Colorado (UNC)</h3>
+          <p class="meta">B.S. in Mathematics (Applied Computer Science concentration), Minor in Business Administration · Greeley, CO</p>
+
+          <h3>Lamar University</h3>
+          <p class="meta">Mathematics major (transfer) · Beaumont, TX</p>
+        </section>
+
+        <!-- Professional & Research Experience -->
+        <section class="panel">
+          <h2>Professional & Research Experience</h2>
+
+          <h3>Graduate Research Assistant — Scientific Computing, University of Utah (Jan 2024–Present)</h3>
+          <ul>
+            <li>Operator Learning on manifolds with DeepONets (sphere/torus): dual-branch inputs (functions + normals); physics-informed/Taylor loss variants; predictor–corrector architecture.</li>
+            <li>FEM pipelines (FEniCSx): coarse-grid learning 168×168→48×48; interpolation/refinement studies; reproducible seeds; generalization tracking.</li>
+            <li>Training orchestration, logging, plotting; vectorization/loop-unrolling for speedups.</li>
+          </ul>
+
+          <h3>Graduate Teaching Assistant — Discrete Mathematics, University of Utah (Aug 2023–May 2025)</h3>
+          <ul>
+            <li>Supported 250+ students/term—labs, office hours, exam reviews, grading, and tailored materials.</li>
+            <li>Topics: proofs & induction, counting, graphs, modular arithmetic, recursion.</li>
+          </ul>
+
+          <h3>Independent Software & Tutoring Projects (Ongoing)</h3>
+          <ul>
+            <li>Built maroon-themed Next.js lab website: static arXiv ingestion, KaTeX titles, people & gallery pages, AI-generated imagery, privacy policy.</li>
+            <li>Data structures & algorithms tutoring (C++/Python/Java); SAT Math; IELTS speaking materials.</li>
+          </ul>
+
+          <h3>Grader — Discrete Mathematics, University of Northern Colorado (Jan 2022–May 2022)</h3>
+          <ul>
+            <li>Graded assignments/quizzes/exams for a 40+ student course; maintained rubric consistency and turnaround SLAs.</li>
+            <li>Collaborated with the instructor on edge cases in combinatorics & logic proofs.</li>
+          </ul>
+
+          <h3>Assistant Tennis Coach — Tennis Academy of Belarus (Dec–Jan 2018, 2019)</h3>
+          <ul>
+            <li>Coached multiple age groups on fundamentals, footwork, and match strategy; sparring partner for professionals.</li>
+          </ul>
+
+          <h3>Volunteer Social Media Manager — UNC Women’s Tennis, University of Northern Colorado (Fall 2019–Spring 2020)</h3>
+          <ul>
+            <li>Produced posts and newsletters; improved content cadence, brand consistency, and community engagement.</li>
+          </ul>
+        </section>
+
+        <!-- Publications & Preprints -->
+        <section class="panel">
+          <h2>Publications & Preprints</h2>
+          <ul>
+            <li>
+              <strong>Belianovich, M.</strong> <em>Operator Learning for PDEs with DeepONets (preprint)</em>. arXiv, 2025.
+              <a href="https://arxiv.org/search/?query=Belianovich&searchtype=all" target="_blank" rel="noopener">arXiv</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Selected Technical Projects -->
+        <section class="panel">
+          <h2>Selected Technical Projects</h2>
+          <ul>
+            <li><strong>DeepONet training suite</strong>: standardized training structure; seeds [7, 42, 77]; split-phase schedule (75% standard, 25% Taylor); per-seed + averaged metrics/plots.</li>
+            <li><strong>Predictor–Corrector DeepONet</strong>: predictor maps FEM solutions to approximations; corrector maps to manufactured solutions; combined losses (MSE + Taylor + physics + L2).</li>
+            <li><strong>Taylor-enhanced DeepONet</strong>: stable higher-order derivative terms; auto-diff-friendly scalar outputs; eliminated internal vmaps.</li>
+            <li><strong>FEM solver & subdomain learning</strong>: Poisson with manufactured forcing; boundary interpolation; verification and convergence studies (FEniCSx).</li>
+            <li><strong>Kernel compressor/decompressor</strong> for reaction–diffusion operator learning; IMQ kernels; normalization; sparsity-aware regression.</li>
+            <li><strong>Vectorization & loop-unrolling</strong> strategies; cache-aware analysis; OpenMP-style patterns in course PAs.</li>
+            <li><strong>Randomized SVD</strong>: comparisons vs. classical SVD for large matrices; accuracy–runtime tradeoffs.</li>
+          </ul>
+        </section>
+
+        <!-- Selected Student Research -->
+        <section class="panel">
+          <h2>Selected Student Research</h2>
+          <ul>
+            <li>Weld County annual temperature analysis (1920–2020) — time-series pipeline & visualization.</li>
+            <li>COVID-19 spread modeling in Weld County (projected 2021) — simulation using early pandemic data.</li>
+            <li>ALEKS placement vs. performance in MATH/STAT/CHEM — collaborative study (with PhD students; advised by Dr. Pierce).</li>
+          </ul>
+        </section>
+
+        <!-- Skills -->
+        <section class="panel">
+          <h2>Technical Skills</h2>
+          <div class="grid2">
+            <div>
+              <strong>Languages:</strong> Python, MATLAB, C/C++, Java, TypeScript/JavaScript, SQL, HTML/CSS
+              <div style="margin-top:6px">
+                <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">C/C++</span>
+                <span class="tag">Java</span><span class="tag">TypeScript</span><span class="tag">SQL</span>
+              </div>
+            </div>
+            <div>
+              <strong>Libraries/Tools:</strong> PyTorch, NumPy, Pandas, scikit-learn, FEniCSx, KaTeX, Next.js, Git, Linux, SLURM
+              <div style="margin-top:6px">
+                <span class="tag">PyTorch</span><span class="tag">FEniCSx</span><span class="tag">Next.js</span>
+                <span class="tag">Git</span><span class="tag">Linux</span><span class="tag">HPC</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Leadership / Activities -->
+        <section class="panel">
+          <h2>Leadership, Awards & Activities</h2>
+          <ul>
+            <li>Vice-President, UNC Mathematics Club (1.5 years); organized events and peer-learning sessions.</li>
+            <li>Co-Captain, Division I Tennis (UNC & Lamar University); managed team Instagram media.</li>
+            <li>Interests: interior design DIY, piano, hiking/dog parks, gaming, reading, crocheting.</li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- RIGHT COLUMN -->
+      <aside>
+
+        <!-- Awards / Diplomas / Certificates -->
+        <section class="panel">
+          <h2>Awards · Diplomas · Certificates</h2>
+
+          <h3>Academic</h3>
+          <ul>
+            <li>Graduated Elementary School with Honors (2010)</li>
+            <li>Highest GPA awards (2015–2017); Graduated with honors, Secondary School №140, Minsk (2017)</li>
+            <li>Multiple Olympiad diplomas: Mathematics, Physics, English, Chemistry, Astronomy (2013–2017)</li>
+            <li>Athletic Team with the highest GPA — Lamar (Spring 2019); UNC (Fall 2019 & Spring 2020)</li>
+            <li>NCAA Division I Full-ride Athletic Scholarship</li>
+          </ul>
+
+          <h3>Sports</h3>
+          <ul>
+            <li>21 medals in Belarus National tennis tournaments (2012–2016)</li>
+            <li>Top 5–4 National rankings in U16/U18 singles & doubles (2016–2017)</li>
+          </ul>
+
+          <h3>Music</h3>
+          <ul>
+            <li>Piano competitions: “Young Talents”, “Winter Patterns”, chamber ensembles — multiple diplomas (2011–2014)</li>
+            <li>Graduated with honors from Music School №10 (piano & guitar), Minsk (2014, 2017)</li>
+          </ul>
+        </section>
+
+        <!-- Coursework (from résumé/CV) -->
+        <section class="panel">
+          <h2>Selected Coursework</h2>
+          <ul>
+            <li><strong>Graduate/Upper-Level:</strong> Scientific Machine Learning (ME 7960), High-Performance Computing (CS 4230/6230), Parallel Programming, Numerical Analysis, PDEs for Scientific Computing, Algorithms, Optimization, Probability & Statistics, Machine Learning, Data Mining.</li>
+            <li><strong>Foundational:</strong> Data Structures, Discrete Mathematics, Linear Algebra, Calculus I–III, Differential Equations, Numerical Methods, Computer Organization, Operating Systems (intro), Databases (intro).</li>
+          </ul>
+        </section>
+
+        <!-- Community Service -->
+        <section class="panel">
+          <h2>Community Service</h2>
+          <ul>
+            <li>Hurricane Harvey relief volunteer — sorting, outreach, logistics (2017)</li>
+            <li>Breast Cancer Awareness annual event support (2017–2018)</li>
+            <li>ABC Child Development Center volunteer — youth outreach (2020)</li>
+          </ul>
+        </section>
+
+        <!-- Links -->
+        <section class="panel">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+            <li><a href="index.html">Portfolio / Home</a></li>
+            <li><a href="https://scholar.google.com/citations?user=goYJXTsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://arxiv.org/search/?query=Belianovich&searchtype=all" target="_blank" rel="noopener">arXiv</a></li>
+            <li><a href="https://github.com/milenabel" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/milenabel/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </section>
+
+      </aside>
+    </div>
+
+    <footer class="meta" style="border-top:1px solid #222;padding-top:12px;margin-top:16px">
+      <span>© 2025 Milena Belianovich Holtman</span> · <span>All rights reserved</span>
+    </footer>
+  </div>
+</body>
+</html>

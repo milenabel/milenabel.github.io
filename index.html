@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Milena Belianovich Holtman — Software Engineer & Scientific Computing Researcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Software Engineer focused on Python, ML, and scientific computing. Building performant pipelines, clean tooling, and HPC-friendly workflows."
+  />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <strong class="brand-name">Milena Belianovich Holtman</strong>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#links">Links</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          Software Engineer focused on
+          <span class="accent">Python · ML · Scientific Computing</span>
+        </h1>
+        <p class="tagline">
+          I build performant pipelines for data-driven research: PyTorch, HPC-friendly workflows, and clear UX for results.
+        </p>
+        <div class="cta">
+          <a class="btn btn--pri" href="assets/resume.pdf" download>Download Résumé (PDF)</a>
+          <a class="btn btn--sec" href="cv.html">View Full CV</a>
+        </div>
+      </div>
+      <div class="avatar ring">
+        <img src="assets/profile.jpg" alt="Milena Belianovich Holtman" class="avatar-img">
+      </div>
+
+    </section>
+
+    <!-- Projects / Work -->
+    <section id="work" class="grid">
+      <article class="card">
+        <h3>Unified Kernel + Polynomial Interpolation</h3>
+        <p>Unifies CSRBF kernels with multivariate polynomials; efficient LA routines and boundary-aware accuracy.</p>
+        <div class="chips">
+          <span class="chip">MATLAB</span><span class="chip">Python</span><span class="chip">Linear Algebra</span>
+        </div>
+        <p class="card-links">
+          <a href="https://arxiv.org/abs/2507.12629" target="_blank" rel="noreferrer">arXiv</a> ·
+          <a href="https://github.com/milenabel/ufekp" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Lab Website (Next.js)</h3>
+        <p>Maroon-themed lab site with static arXiv ingestion, people pages, gallery, and AI-generated art.</p>
+        <div class="chips">
+          <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">KaTeX</span>
+        </div>
+        <p class="card-links">
+          <a href="https://github.com/milenabel/labsite" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Operator Learning with DeepONets</h3>
+        <ul class="list">
+          <li>Dual-branch (functions + normals) on curved surfaces</li>
+          <li>Predictor–Corrector + Taylor loss; seeded runs & generalization tracking</li>
+          <li>FEM coarse→fine learning (168×168 → 48×48)</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">PyTorch</span><span class="chip">FEniCSx</span><span class="chip">NumPy</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Links / Contact -->
+    <section id="links" class="grid">
+      <article class="card">
+        <h3>Find me online</h3>
+        <div class="socials">
+          <a class="btn" href="https://github.com/milenabel" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/milenabel/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=goYJXTsAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a class="btn" href="https://arxiv.org/search/?query=Belianovich&searchtype=all" target="_blank" rel="noreferrer">arXiv</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:milushka.trend@gmail.com">milushka.trend@gmail.com</a></p>
+        <p>Location: Salt Lake City, UT</p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <small>© <span id="y"></span> Milena Belianovich Holtman. Built with ♥ on GitHub Pages.</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
